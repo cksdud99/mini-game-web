@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>비밀번호 찾기</title>
 <script src="https://code.jquery.com/jquery-3.7.1.js"
 	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 	crossorigin="anonymous"></script>
@@ -48,8 +48,8 @@
 .subtitle {
 	position: absolute;
 	top: 210px;
-	left: 316px;
-	width: 124px;
+	left: 276px;
+	width: 200px;
 	height: 52px;
 	font-size: 32px;
 	line-height: 48px;
@@ -169,7 +169,7 @@
 .findPw {
 	position: absolute;
 	top: 555px;
-	left: 316px;
+	left: 221px;
 	width: 91px;
 	height: 24px;
 	font-size: 14px;
@@ -273,33 +273,27 @@ input::placeholder {
 		<div class="title">
 			<img src="logo.png" alt="">
 		</div>
-		<div class="subtitle">SING IN</div>
-		<form action="/login.users" method="post">
-			<input type="text" class="id" name="id" placeholder="TechX 아이디 입력">
-			<input type="text" class="pw" name="pw" placeholder="비밀번호 입력">
-			<div class="rememberId">
-				<input type="checkbox" class="rememberId">
-				<div class="rememberId">Remember id</div>
-			</div>
-			<button type="submit" class="signIn">Sign In</button>
-		</form>
+		<div class="subtitle">FIND MY PW</div>
+		<input type="text" class="id" placeholder="아이디 입력"> <input
+			type="text" class="pw" placeholder="이메일 주소 입력">
 
 
 		<div class="container2">
 			<img src="sign.jpg" alt="" class="sing"> <img src="logo.png"
 				alt="" class="logo">
 		</div>
-
-
-
+		<button type="button" class="signIn">PIND MY PW</button>
 		<div class="join_membership">회원가입</div>
-		<div class="findId">아이디 찾기</div>
-		<div class="findPw">비밀번호 찾기</div>
-		<div class="with">Or sign in with</div>
-		<button class="google">
-			<i class="fa-brands fa-google fa-lg" style="color: #ffa200;"></i>
-			Google 계정으로 로그인
-		</button>
+		<a href="/views/auth/findmyid.jsp">
+			<div class="findPw">아이디 찾기</div>
+		</a>
+
+		<script>
+            $(".signIn").on("click",()=>{
+                window.open("pwcheck.jsp", "_blank", "width=600,height=400,top=250,left=500");
+            });
+        </script>
 	</div>
+
 </body>
 </html>

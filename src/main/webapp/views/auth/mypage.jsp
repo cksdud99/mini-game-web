@@ -97,7 +97,7 @@
 
 .email {
     position: absolute;
-    top: 250px;
+    top: 270px;
     left: 150px;
     width: 169px;
     height: 22px;
@@ -108,7 +108,7 @@
 
 .phonenum {
     position: absolute;
-    top: 290px;
+    top: 310px;
     left: 150px;
     width: 169px;
     height: 22px;
@@ -117,20 +117,9 @@
     font-weight: 600;
 }
 
-.address {
-    position: absolute;
-    top: 330px;
-    left: 150px;
-    width: 461px;
-    height: 22px;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-}
-
 .line2 {
     position: absolute;
-    top: 400px;
+    top: 380px;
     left: 150px;
     width: 461px;
     height: 0px;
@@ -142,7 +131,7 @@
 
 .gamepoint1 {
     position: absolute;
-    top: 430px;
+    top: 415px;
     left: 150px;
     font-size: 14px;
     line-height: 22px;
@@ -151,7 +140,7 @@
 
 .gamepoint2 {
     position: absolute;
-    top: 430px;
+    top: 415px;
     left: 250px;
     width: 38px;
     height: 24px;
@@ -206,7 +195,7 @@
 
 .playtime1 {
     position: absolute;
-    top: 470px;
+    top: 455px;
     left: 150px;
     font-size: 14px;
     line-height: 22px;
@@ -215,7 +204,7 @@
 
 .playtime2 {
     position: absolute;
-    top: 470px;
+    top: 455px;
     left: 280px;
     width: 38px;
     height: 24px;
@@ -856,12 +845,11 @@ td:nth-child(4) {
             <i class="fa-solid fa-clipboard-list" id="boardicon" style="color: #ffffff;"></i>
             <i class="fa-solid fa-gamepad" id="gameicon" style="color: #ffffff;"></i>
         </div>
-        <div class="nickname">미르몬스터</div>
-        <div class="id">mir5772</div>
+        <div class="nickname" name="nickname">${dto.nickname }</div>
+        <div class="id" name="name">${dto.id }</div>
         <div class="line1"></div>
-        <div class="email"><i class="fa-solid fa-at"></i> xxxxx@gmail.com</div>
-        <div class="phonenum"><i class="fa-solid fa-phone"></i> 010-1234-5678</div>
-        <div class="address"><i class="fa-solid fa-location-dot"></i> 서울특별시 관악구 신림로 00길 땡땡오피스텔 303호</div>
+        <div class="email" name="email"><i class="fa-solid fa-at"></i> ${dto.email }</div>
+        <div class="phonenum" name="phonenum"><i class="fa-solid fa-phone"></i> ${dto.phone }</div>
         <div class="line2"></div>
         <div class="gamepoint1">게임포인트</div>
         <div class="gamepoint2">330</div>
@@ -875,8 +863,12 @@ td:nth-child(4) {
         <div class="gamebox2">&nbsp;&nbsp;고기굽기 게임</div>
         <div class="score2">score : 10</div>
         <div class="rank2">rank : 8</div>
+        <a href="/modify.users">
         <button class="modify">수정하기</button>
+        </a>
+        <a href="/index.jsp">
         <button class="main">메인화면</button>
+        </a>
 
     </div>
 
@@ -905,42 +897,42 @@ td:nth-child(4) {
     <div class="container3">
         <div class="subtitle">내 게임 순위</div>
         <div class="game1">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
         </div>
 
         <div class="game2">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
         </div>
 
         <div class="game3">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
         </div>
 
         <div class="game4">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
         </div>
 
         <div class="game5">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
         </div>
 
         <div class="game6">
-            <div class="gameimg"><img src="sign.jpg" alt=""></div>
+            <div class="gameimg"><img src="/views/auth/sign.jpg" alt=""></div>
             <div class="myrank">내 순위</div>
             <div class="rank"><i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i> 2등</div>
             <div class="myscore"><i class="fa-solid fa-star" style="color: #ffffff;"></i> 15점</div>
@@ -948,8 +940,6 @@ td:nth-child(4) {
 
 
     </div>
-
-    <button class="unregister">회원탈퇴</button>
 
 
     <script>
